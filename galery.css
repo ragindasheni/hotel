@@ -1,0 +1,111 @@
+ .gallery-container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .main-slider {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .main-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .thumb-slider {
+      height: 100px;
+    }
+
+    .thumb-slider .swiper-slide {
+      width: auto;
+      height: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .thumb-slider .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .thumb-slider img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .room-gallery{
+      display: flex;
+      margin: 5%;
+      justify-content: space-around;
+      
+      
+      
+    }
+    .gallery-container{
+      width: 30%;
+      
+    }
+    .swiper-wrapper{
+      height: 100%;
+    }
+
+    /* ✅ რესპონსივი */
+    @media (width > 576px) {
+   .main-slider {
+        height: 150px;
+      }
+
+      .thumb-slider {
+        height: 70px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+      }
+}
+    @media (max-width: 768px) {
+      .main-slider {
+        height: 250px;
+      }
+
+      .thumb-slider {
+        height: 70px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thumb-slider .swiper-slide {
+        width: 25%;
+      }
+
+      .main-slider {
+        height: 200px;
+      }
+
+      .thumb-slider {
+        height: 60px;
+      }
+    }
